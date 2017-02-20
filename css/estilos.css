@@ -1,0 +1,211 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: rgb(191, 182, 190);
+}
+header{
+  top: 0;
+  height: 50px;
+  background: rgb(22, 6, 69);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  box-shadow: 5px 5px 10px rgb(167, 165, 162);
+  position: relative;
+  position: fixed;
+}
+header label, input{
+  display: none;;
+}
+.titulo-cabecera{
+  margin-left: 230px;
+  color: white;
+  font-size: 25px;
+  font-weight: normal;
+  margin-top: 10px;
+  text-shadow: 2px 2px 5px rgb(167, 165, 162);
+  font-style: italic;
+}
+.menu ul{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+.menu li a{
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+.menu li a:hover{
+  background: #094175;
+}
+.usuario-container{
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 1290px;
+  width: 60px;
+  cursor: pointer;
+}
+/*.toast{
+  display: none;
+  width: 20%;
+  height: 50%;
+  position: absolute;
+  background: rgb(22, 6, 69);
+  border-radius: 7px;
+
+  top: 60px;
+	right: 10px;
+	bottom: 0;
+	z-index: -10;
+
+}*/
+
+.search-container{
+  margin-left: 300px;
+  width: 40px;
+  color: white;
+}
+.search-container a{
+  padding: 16px 20px;
+  text-decoration: none;
+}
+ .search-container a .icon-search{
+  font-size: 17px;
+  color: white;
+  margin-top: 15px;
+  font-weight: bold;
+  line-height: 47px;
+}
+.search-container a:hover{
+   background: #094175;
+}
+.usuario-container .usuario{
+  width: 40px;
+  border-radius: 50%;
+
+}
+section{
+  width: 95%;
+  margin: 100px auto;
+}
+article{
+    box-shadow: 20px 20px 30px rgb(167, 165, 162);
+}
+.articulo1, .articulo2, .articulo3, .articulo4, .articulo5, .articulo6, .articulo7 {
+  width: 70%;
+  margin: auto;
+  background: white;
+  border-radius: 7px;
+  margin-bottom: 25px;
+}
+.avatar-perfil{
+  width: 50px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.nombre--usuario{
+  margin-left: 70px;
+  margin-top: -40px;
+  font-size: 30px;
+}
+section img{
+  max-width: 80%;
+  margin-left: 10%;
+  border: 1px solid rgb(167, 165, 162);
+}
+.botonera{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+.botonera ul{
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.botonera ul li{
+padding: 10px 80px;
+}
+.botonera ul li button{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px 12px;
+  border: none;
+}
+@media (max-width : 576px){
+  .menu{
+    width: 100%;
+  }
+  .menu ul{
+    display: block;
+    width: 70%;
+    top: 50px;
+    left: -500px;
+    height: 1280px;
+    position: absolute;
+    background: rgba(22, 6, 69, .95);
+    border-bottom-right-radius: 10px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    border-top: 1px solid #9a9a9a;
+  }
+  .menu ul li a{
+      padding: 30px 30px;
+  }
+  header label{
+    display: block;
+    color: white;
+    line-height: 50px;
+    font-size: 25px;
+    margin-left: 20px;
+  }
+
+  .titulo-cabecera{
+    display: none;
+  }
+  .input-menu:checked ~ .menu ul{
+    left: 0;
+  }
+  /*.toast{
+    display: none;
+    width: 96%;
+    height: 90%;
+    top: 70px;
+    z-index: -10;
+    transition: all .5 ease;
+  }*/
+
+  .articulo1, .articulo2, .articulo3, .articulo4, .articulo5, .articulo6, .articulo7{
+    width: 99%;
+  }
+  .usuario-container{
+    right: 0px;
+  }
+  .search-container{
+    margin-right: 100px;
+  }
+  .search-container a{
+    line-height: 50px;
+  }
+  .search-container a span{
+    font-size: 25px;
+  }
+  .botonera{
+    width: 90%;
+  }
+  .botonera ul li{
+  padding: 10px 41px;
+  }
+
+}
